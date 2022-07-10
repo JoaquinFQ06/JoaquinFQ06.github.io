@@ -1,0 +1,51 @@
+body {
+    font-family: "Oswald", sans-serif;
+}
+
+.titulo-principal {
+    padding-top: 80px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.padre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 300px;
+}
+
+.padre div {  
+    background: rgb(198, 204, 202);
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.somos p, .vision p, .mision p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 40px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .padre div p {  
+        text-align: left;
+    }
+
+    .padre div { 
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+

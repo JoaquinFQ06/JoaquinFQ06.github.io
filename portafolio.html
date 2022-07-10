@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JC Technology - Portafolio</title>
+
+	<!--Icono de la pestaña-->
+    <link rel="icon" href="img/iconopagina.png">
+
+    <!--Iconos para la pagina desde un URL-->
+    <script src="https://kit.fontawesome.com/82ec21a6d1.js" crossorigin="anonymous"></script>
+    
+    <!--Estilos CSS-->
+	<link rel="stylesheet" href="css/style-inicio.css">
+	<link rel="stylesheet" href="css/style-portafolio.css">
+</head>
+<body>
+	<!--Menu-->
+    <header>
+        <nav class="barra-menu">
+            <!--Icono menu despegable-->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <!--Logo-->
+            <div class="enlace">
+                <p><a class="logo" href="#">JC Technology</a></p>
+            </div>
+
+            <!--Enlaces-->
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="sucursales.html">SUCURSALES</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="portafolio.html">PORTAFOLIO</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="login.html">INICIAR SESION</a></li>
+                <li><a href="registro.html">REGISTRARSE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<!--Contenido de la sección-->
+	<section class="portafolio">
+		<h1>Nuestro Portafolio</h1>
+		<div class="portafolio-container">
+			<section class="portafolio-item">
+				<img src="img/2.jpg" alt="" class="portafolio-img">
+				<section class="portafolio-text">
+					<h2>JOAQUIN SEBASTIAN FARRO QUIROZ</h2>
+					<p>
+						Soy estudiante de computación e informática en el Instituto Carlos Cueto Fernandini,
+						enfocado más en la programación y desarrollo de software, soy una persona honesta, responsable,
+						atento y siempre coloborativo con mi equipo de trabajo.
+					</p>
+				</section>
+			</section>
+			<section class="portafolio-item">
+				<img src="img/3.jpg" alt="" class="portafolio-img">
+				<section class="portafolio-text">
+					<h2>CHRISTAN ANDRÉS JUAREZ HIDALGO</h2>
+					<p>
+						Soy estudiante de la carrera de computación e 
+						informática en el Instituto Carlos Cueto Fernandini. Soy una persona dinámica, proactiva, responsable,
+						siempre atento al trato de los clientes.
+					</p>
+				</section>
+			</section>
+		</div>
+	</section>
+
+	<!--Icono flotante WhatsApp-->
+    <a href="https://api.whatsapp.com/send?phone=51933057429&text=Hola,%20en%20que%20te%20puedo%20ayudar?" class="btn-wsp" target="_blank">
+	    <i class="fa fa-whatsapp icono"></i>
+	</a>
+
+	<!--Funciones JavaScript-->
+    <script src="js/menu-fijo.js"></script>
+</body>
+</html>

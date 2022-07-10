@@ -1,0 +1,131 @@
+.sucursales-wrap .titulo {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 120px 1% 10px 1%;
+  color: #fff;
+}
+
+/* Contenedor prinicpal, el contenido ira de manera horizontal*/
+.sucursales-wrap .content {
+  display: flex;
+  justify-content: space-around;
+  padding: 1% 5% 1% 5%;
+}
+
+/* Contenido de la izquierda */
+.sucursales-wrap .content .left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  width: 30%;
+}
+
+/* Contenido de la derecha */
+.sucursales-wrap .content .right-side {
+  width: 60%;
+  padding: 16px;
+}
+
+/* Tamaño del mapa */
+.right-side iframe {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+/* Cuadro de texto */
+.sucursales-wrap .content .left-side .search-input {
+  margin-bottom: 10%;
+  width: 100%;
+}
+
+.sucursales-wrap .content .left-side div:first-child input {
+  border-radius: 7px;
+  border: 1px solid green;
+  width: 100%;
+  padding: 5%;
+  font-size: 1rem;
+}
+
+.sucursales-wrap .content .left-side .list-places {
+  width: 100%;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  max-height: 164vh;
+  overflow: auto;
+}
+
+/* Cuadros de texto de la izquierda */
+.sucursales-wrap .content .left-side .card-place {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #d8d8d8;
+  background: #d8d8d8;
+}
+
+.sucursales-wrap .content .left-side .card-place:nth-child(even) {
+  background-color: #efefef;
+}
+
+.sucursales-wrap .content .left-side .card-place div:first-child {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+}
+
+.sucursales-wrap .content .left-side .card-place div:first-child span:first-child {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.sucursales-wrap .content .left-side .card-place div:first-child span {
+  margin-bottom: 3px;
+}
+
+.sucursales-wrap .content .left-side .card-place div:first-child span i {
+  color: gray;
+}
+
+.sucursales-wrap .content .left-side .card-place div:nth-child(2) {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 3%;
+}
+
+/* El segundo contenedor pequeño donde va la inforamcion */
+.sucursales-wrap .content .left-side .list-places .card-place div:nth-child(2) span {
+  color: gray;
+}
+
+.sucursales-wrap .content .left-side .list-places .card-place .text-info {
+  color: green;
+  text-decoration: none;
+  margin-left: 7px;
+}
+
+/* Permite colocar el contenido de manera vertical como tambien redimensionarlo */
+@media (max-width: 950px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sucursales-wrap .content .left-side {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sucursales-wrap .content .right-side {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+  }
+}
